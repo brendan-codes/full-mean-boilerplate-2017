@@ -1,0 +1,14 @@
+<form #form="ngForm" (submit)="createNote()">
+  Author: <input 
+            type="text" 
+            name="author" 
+            required
+            [(ngModel)]="note.author"><br>
+  Note: <input 
+            type="text" 
+            name="body" 
+            required
+            [(ngModel)]="note.body"><br>
+  <button type='submit'>Create Note!</button>
+</form>
+<hr>
